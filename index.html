@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="shortcut icon" href="img/diseno-grafico.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Mi Sitio Web</a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html"><i class="bi bi-pencil-square"></i> Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="bi bi-person-lines-fill"></i> Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -29,13 +30,13 @@
     <div id="carouselExample" class="carousel slide mt-5 pt-4" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://picsum.photos/id/247/1200/400" class="d-block w-100" alt="imagen 1">
+                <img src="img/banner1.jpg" class="d-block w-100" alt="imagen 1">
             </div>
             <div class="carousel-item">
-                <img src="https://picsum.photos/id/120/1200/400" class="d-block w-100" alt="imagen 2">
+                <img src="img/banner2.jpg" class="d-block w-100" alt="imagen 2">
             </div>
             <div class="carousel-item">
-                <img src="https://picsum.photos/id/180/1200/400" class="d-block w-100" alt="imagen 3">
+                <img src="img/banner3.jpg" class="d-block w-100" alt="imagen 3">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -46,21 +47,26 @@
         </button>
     </div>
 
-    <div class="container text-center mt-5">
-        <h1 class="display-5"><i class="bi bi-star-fill text-warning"></i> Bienvenido a Mi Sitio Web</h1>
-        <p class="lead">Explora nuestros servicios y contáctanos para más información.</p>
-        <div class="card mx-auto mt-4" style="max-width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Acerca de nosotros</h5>
-                <p class="card-text">Somos una empresa dedicada a ofrecer soluciones digitales.</p>
-                <a href="servicios.html" class="btn btn-primary">Ver servicios</a>
+    <div class="central container text-center mt-3">
+        <div class="slider">
+            <h1 class="display-5 bg-light fw-bold text-danger">
+                <i class="bi bi-star-fill text-warning"></i> Soluciones Digitales <i class="bi bi-star-fill text-warning"></i>
+            </h1>
+            <p class="lead bg-light">Explora nuestros servicios y contáctanos para más información.<br>¿Cómo te podemos ayudar?</p>
+            <div class="card mx-auto mt-3" style="max-width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Acerca de nosotros</h5>
+                    <p class="card-text">Somos una empresa dedicada a ofrecer soluciones digitales.</p>
+                    <a href="servicios.html" class="btn btn-primary">Ver servicios</a>
+                </div>
             </div>
-        </div>
+       </div>
     </div>
 
-    <footer class="mt-5">
+    <footer class="mt-4">
         <div class="container">
-            <p>&copy; 2025 Mi Sitio Web</p>
+            <p class="copyright">Copyright &copy; Paginas Web Peruana 2025<br>Todos los Derechos Reservados</p>
+            <p class="enlace"><a href="#"><i class="bi bi-youtube"></i></a>  <a href="#"><i class="bi bi-instagram"></i></a>  <a href="#"><i class="bi bi-twitter-x"></i></a></p>
         </div>
     </footer>
 

@@ -5,54 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="shortcut icon" href="img/contacto.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Mi Sitio Web</a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house"></i> Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html"><i class="bi bi-pencil-square"></i> Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html"><i class="bi bi-person-lines-fill"></i> Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="container mt-5 pt-4">
-        <h2 class="mb-4">Contáctanos</h2>
-        <form>
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" required>
+        <h2 class="mb-2">Contáctanos</h2>
+        <div class="contenido">
+            <div class="formulario">
+                <form class="p-2">
+                    <div class="mb-1">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-1">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-1">                        
+                        <input class="form-check-input" type="checkbox" value="" id="checkDefault" checked>
+                        <label class="form-check-label" for="checkDefault">Envio de newsletter?</label>
+                    </div>
+                    <div class="mb-2">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmModal">
+                        Enviar
+                    </button>
+                </form>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" required>
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5083883378943!2d-77.05887822207946!3d-12.077308657637976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8fd1b98d681%3A0x5a7d0c7a4d683b51!2sAv.%20Gral.%20Eugenio%20Garz%C3%B3n%201742%2C%20Jes%C3%BAs%20Mar%C3%ADa%2015072!5e0!3m2!1ses!2spe!4v1752096535601!5m2!1ses!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="3" required></textarea>
-            </div>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmModal">
-                Enviar
-            </button>
-        </form>
-
-        <h3 class="mt-5">Equipo de contacto</h3>
-        <table class="table table-bordered table-striped">
+        </div>
+        
+        <h3 class="mt-2">Equipo de contacto</h3>
+        <table class="table table-bordered table-hover">
             <thead class="table-dark">
                 <tr>
                     <th>Nombre</th>
                     <th>Área</th>
                     <th>Correo</th>
+                    <th>Celular</th>
                 </tr>
             </thead>
             <tbody>
@@ -60,12 +73,20 @@
                     <td>Ana López</td>
                     <td>Soporte</td>
                     <td>ana@misitio.com</td>
+                    <td>949 654 343</td>
                 </tr>
                 <tr>
                     <td>Juan Pérez</td>
                     <td>Desarrollo</td>
                     <td>juan@misitio.com</td>
+                    <td>984 765 900</td>
                 </tr>
+                <tr>
+                    <td>Mario Escalante</td>
+                    <td>Marketing</td>
+                    <td>mario@misitio.com</td>
+                    <td>994 095 654</td>
+                </tr>                
             </tbody>
         </table>
     </div>
@@ -89,7 +110,8 @@
 
     <footer class="mt-5">
         <div class="container">
-            <p>&copy; 2025 Mi Sitio Web</p>
+            <p class="copyright">Copyright &copy; Paginas Web Peruana 2025<br>Todos los Derechos Reservados</p>
+            <p class="enlace"><a href="#"><i class="bi bi-youtube"></i></a>  <a href="#"><i class="bi bi-instagram"></i></a>  <a href="#"><i class="bi bi-twitter-x"></i></a></p>
         </div>
     </footer>
 
